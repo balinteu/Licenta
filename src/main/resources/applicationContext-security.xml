@@ -7,7 +7,11 @@
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
-	<http use-expressions="true" create-session="stateless"/>
+	<!-- Stateless RESTful service using Basic authentication -->  
+	<http pattern="/restful/**" create-session="stateless">  
+	  <intercept-url pattern='/**' access='ROLE_REMOTE' />  
+	  <http-basic />  
+	</http>
 
 
     <beans:bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter"/>
