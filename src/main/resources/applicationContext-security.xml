@@ -13,6 +13,6 @@
         <filter-chain-map path-type="ant">
             <filter-chain pattern="/**" filters="securityContextPersistenceFilter"/>
         </filter-chain-map>
-    </beans:bean>
+    </beans:bean> -->
 
-</beans:beans> -->
+</beans:beans> 
