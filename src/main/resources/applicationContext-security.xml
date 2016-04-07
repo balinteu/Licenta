@@ -9,7 +9,7 @@
 
     <beans:bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter"/>
 
-	<http create-session="never"></http> 
+	
 
     <beans:bean id="springSecurityFilterChain" class="org.springframework.security.web.FilterChainProxy">
         <filter-chain-map path-type="ant">
@@ -18,3 +18,4 @@
     </beans:bean>
 
 </beans:beans> 
+<http create-session="never"></http> 
