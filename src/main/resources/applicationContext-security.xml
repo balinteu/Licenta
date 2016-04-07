@@ -8,7 +8,7 @@
 	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
     <beans:bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter"/>
-	 <property name='allowSessionCreation' value='false' />
+	 <beans:property name='allowSessionCreation' value='false' />
     
 	
 
