@@ -7,10 +7,7 @@
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
-	<http>
-	<!-- ... -->
-	<csrf disabled="true"/>
-	</http>
+	<http create-session="stateless">...</http>
 
 
     <beans:bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter"/>
