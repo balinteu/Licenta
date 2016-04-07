@@ -16,11 +16,11 @@
     
 	
 
-    <beans:bean id="springSecurityFilterChain" class="org.springframework.security.web.FilterChainProxy">
+    <!--<beans:bean id="springSecurityFilterChain" class="org.springframework.security.web.FilterChainProxy">
         <filter-chain-map path-type="ant">
             <filter-chain pattern="/**" filters="securityContextPersistenceFilter"/>
         </filter-chain-map>
-    </beans:bean>
+    </beans:bean>-->
 
 </beans:beans> 
 <!--<http create-session="never"></http> -->
