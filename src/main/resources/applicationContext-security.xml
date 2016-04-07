@@ -7,7 +7,14 @@
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
-    <beans:bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter"/>
+    <!-- <beans:bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter"/>-->
+    <bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter">
+    <property name='securityContextRepository'>
+        <bean class='org.springframework.security.web.context.HttpSessionSecurityContextRepository'>
+            <property name='allowSessionCreation' value='false' />
+        </bean>
+    </property>
+</bean>
 
     <beans:bean id="springSecurityFilterChain" class="org.springframework.security.web.FilterChainProxy">
         <filter-chain-map path-type="ant">
