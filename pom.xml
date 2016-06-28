@@ -218,3 +218,5 @@
     </build>
 
 </project>
+
+<!-- if you don't specify any modules, the plugin will find them -->
