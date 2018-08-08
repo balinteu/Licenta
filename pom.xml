@@ -220,7 +220,7 @@
               <artifactId>dependency-check-maven</artifactId>
               <version>3.3.1</version>
               <configuration>
-                  <failBuildOnCVSS>8</failBuildOnCVSS>
+                  <failBuildOnCVSS>3</failBuildOnCVSS>
               </configuration>
               <executions>
                   <execution>
